@@ -14,8 +14,8 @@ class RateLimiter {
    */
   constructor () {
     this.records = {};
-    this.halflife = 30 * 1000; // milliseconds
-    this.threshold = 25;
+    this.halflife = 5 * 1000; // milliseconds (5 seconds should be enough to spot a hard-trying pest)
+    this.threshold = 23;
     this.hashes = [];
   }
 
